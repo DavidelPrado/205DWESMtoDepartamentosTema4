@@ -9,6 +9,21 @@ Editamos el fichero con
 ```
 sudo nano 00-installer-config.yaml
 ```
+Editaremos el fichero de configuración de la tarjeta de red
+```
+
+network:
+  ethernets:
+    enp0s3:
+      addresses:
+       - 192.168.1.100/24
+      gateway4: 192.168.1.1
+      nameservers:
+         addresses:
+         - 8.8.8.8
+         search: [amor.local]
+  version: 2
+```
 Aplicamos los cambios con
 ```
 sudo netplan apply
