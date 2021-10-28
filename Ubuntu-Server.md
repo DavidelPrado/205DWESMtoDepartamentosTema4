@@ -5,7 +5,7 @@
 * Tres: BIOS 1M,    /      sistema 20 G y resto del disco en /var.
 ## Nombre de la máquina virtual:
 **XXXUS_LIMPIA**
-## Usuarios
+## Usuarios del sistema
 
 | Usuarios del sistema | Contraseña | Rol |
 | ------- | ------- | --------- |
