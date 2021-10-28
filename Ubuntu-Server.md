@@ -1,0 +1,27 @@
+# Máquina virtual Ubuntu Server #
+## Especificaciones técnicas de RAM/ DISCO/PARTICIONES
+* Disco de 500Gb
+* Memoria RAM 2 Gb
+* Tres: BIOS 1M,    /      sistema 20 G y resto del disco en /var.
+## Nombre de la máquina virtual:
+**XXXUS_LIMPIA**
+## Usuarios
+
+| Usuarios del sistema | Contraseña | Rol |
+| ------- | ------- | --------- |
+| admindwes | admin | administrador |
+| operadorweb |paso | www-data |
+
+## Usuarios de MySQL
+| Usuario | Contraseña | Rool |
+| ---- | ----- |------ |
+| admindb | P@ssw0rd | administrador
+
+## Configuración de red
+* IP: 192.168.3.10X/24
+* Máscara: 255.255.255.0
+* Puerta de enlace: 192.168.3.1
+* DNS: 8.8.8.8
+
+## Nombre del host
+Nombre máquina xxx-used, siendo XXX tus iniciales (todo en minúscula)
