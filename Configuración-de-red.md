@@ -1,5 +1,7 @@
 Primer paso entramos en el directorio de configuración de red 
+```
 cd /etc/netplan
+```
 Creamos una copia de seguridad del fichero de configuración 
 
 ```
