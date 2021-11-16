@@ -2,12 +2,28 @@
 
 * Instalación y configuración de una máquina virtual Ubuntu Server 20.04LTS
 * Instalación, Configuración y Documentación del Entorno de Desarrollo y del Entorno de Explotación.
+## ESTÁNDARES DE DESARROLLO 
+**Datos del alumno**
+Código del alumno: 2XX	
+Asignado por el profesor al comienzo del curso
+
+**Datos del módulo**
+Código del módulo: MMMM (DAW, DWES, DWEC, DIW)
+
+**Datos de la aplicación web**
+Nombre de la aplicación: 2XXMMMMNombreAplicación
+
+**Proyecto NetBeans:** 2XXMMMMNombreAplicación
+
+**Directorio de almacenamiento de la aplicación**: 2XXMMMMNombreAplicación
+	
+
 
 ## ENTORNO DE DESARROLLO
 * Servidor de desarrollo
 * DAW-USED
 * 192.168.20.19
-* [Servidor DAW-USED intranet](http://daw-used.sauces.local)
+* [Servidor DAW-USED intranet http://daw-used.sauces.local](http://daw-used.sauces.local/ "http://daw-used.sauces.local")
 * Máquina virtualizada en proxmox
 * Ubuntu Server 16.04.1 LST
 
@@ -23,8 +39,8 @@
 ***
 
 ### Cuenta de administración de mySQL
-adminsql / paso
-[phpmyadmin ](http://daw-used.sauces.local/phpmyadmin)
+El usaurio **adminsql / paso**
+[ http://daw-used.sauces.local/phpmyadmin](http://daw-used.sauces.local/phpmyadmin/ "http://daw-used.sauces.local/phpmyadmin")
 > Con esta cuenta un alumno puede administrar las bases de datos de todo el equipo de desarrollo
 > El alumno debe utilizar esta cuenta para ejecutar los scripts contra el servidor de mySQL desde NetBeans
 
