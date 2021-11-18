@@ -8,7 +8,7 @@
         <title>MtoDepartamentos</title>
     </head>
     <body>
-        <h1>MANTENIMIENTO DEPARTAMENTOS</h1>
+        <h1><a href="../../proyectoTema4/indexProyectoTema4.php"><=</a>MANTENIMIENTO DEPARTAMENTOS</h1>
         <?php
             include '../core/210322ValidacionFormularios.php';//Incluir la libreria de validación de formularios
             include "../config/confDBPDO.php";//Incluir el archivo de conexión con la base de datos
@@ -50,15 +50,17 @@
             ?>
                 <form action="<?php $_SERVER['PHP_SELF'] ?>" method='post'>
                     <fieldset>
-                        <label>Descripción:</label>
-                        <input type='text' name='descripcion'  value="<?php
-                            //Mostrar los datos correctos introducidos en un intento anterior
-                            echo isset($_REQUEST["descripcion"]) ? $_REQUEST["descripcion"] : "";
-                        ?>"/><?php
-                            //Mostrar los errores en la descripcion, si los hay
-                            echo $aErrores["descripcion"]!=null ? $aErrores["descripcion"] : "";
-                        ?>
-                        <input type='submit' name='enviar' value='Enviar'/>
+                        <fieldset>
+                            <label>Descripción:</label>
+                            <input type='text' name='descripcion'  value="<?php
+                                //Mostrar los datos correctos introducidos en un intento anterior
+                                echo isset($_REQUEST["descripcion"]) ? $_REQUEST["descripcion"] : "";
+                            ?>"/><?php
+                                //Mostrar los errores en la descripcion, si los hay
+                                echo $aErrores["descripcion"]!=null ? $aErrores["descripcion"] : "";
+                            ?>
+                            <input type='submit' name='enviar' value='Enviar'/>
+                        </fieldset>
             <?php
         
             //Comprobar si la entrada es correcta
@@ -93,6 +95,11 @@
                         foreach ($oDepartamento as $valor) {
                             echo "<td>$valor</td>";
                         }
+                        ?>
+                            <td><a href="./MtoDepartamentosModificar.php"><img src="../img/lapiz.png"></img></a></td>
+                            <td><a><img src="../img/papelera.png" heigth="30px"></img></a></td>
+                            <td><a><img src="../img/ojo.png" width="30px"></img></a></td>
+                        <?php
                         echo '</tr>';
                         $oDepartamento=$oResultado->fetchObject();
                     }

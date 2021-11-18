@@ -1,6 +1,10 @@
 h1{
     text-align: center;
 }
+a{
+    text-decoration: none;
+    color: grey;
+}
 th, td{
     border: solid 1px black;
 }
